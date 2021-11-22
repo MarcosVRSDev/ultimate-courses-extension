@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Ultimate Courses Tools",
+    "short_name": "YAP",
+    "description": "Extension to help you get a better experience on Ultimate Courses site.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.ultimatecourses.com/*"
+            ],
+            "js": [
+                "src/vendors/player.js",
+                "src/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}
