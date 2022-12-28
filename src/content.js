@@ -19,7 +19,7 @@
         let fullscreen_btn = document.createElement("button");
 
         fullscreen_btn.style.backgroundColor = "transparent";
-        fullscreen_btn.style.height = "40px";
+        fullscreen_btn.style.height = "30px";
         fullscreen_btn.style.paddingBottom = "0px";
         fullscreen_btn.style.paddingTop = "0px";
 
@@ -40,9 +40,9 @@
 
         player.on("ended", function () {
             btn_complete.click();
-            setTimeout(() => {
-                btn_next.click();
-            }, 2000);
+            // setTimeout(() => {
+            //     btn_next.click();
+            // }, 2000);
         });
     }
 })();
